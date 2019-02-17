@@ -13,7 +13,7 @@ You can download and unzip the zipped archive 'udacity_p7_mws-restaurant from ji
 You can run it locally on your computer as the following steps:
     1. Navigate into the present unzipped directory.
     2. Make sure the project directory is root directory of web service system .
-    3. For Windows systems, Python 3.x is installed as python by default. To start a Python 3.x server, you can simply enter python -m http.server 8000.
+    3. For Windows systems, Python 3.x is installed as python by default. To start a Python 3.x server, you can simply enter python -m http.server 8000. Or you can run js/appserver.js at python prompt.
     4. With your server running, visit the site: http://localhost:8000.
 
 
