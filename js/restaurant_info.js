@@ -153,6 +153,7 @@ createReviewHTML = (review) => {
   const name = document.createElement('p');
   name.innerHTML = review.name;
   name.classList.add('name');
+  li.setAttribute("tabindex", "0");
   li.appendChild(name);
 
   const date = document.createElement('p');
