@@ -17,7 +17,7 @@
   </header>
   <main id="maincontent">
     <section id="map-container" aria-label="map container">
-      <div id="map"></div>
+      <div id="map" aria-label="Map" tabindex="-1"></div>
     </section>
     <section aria-label="restaurant list">
       <div class="filter-options">
@@ -37,20 +37,7 @@
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="/" aria-label="Restaurant Reviews link"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 </body>
 </html>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
